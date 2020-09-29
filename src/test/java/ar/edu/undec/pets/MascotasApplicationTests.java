@@ -1,4 +1,4 @@
-package ar.edu.undec.mascotas;
+package ar.edu.undec.pets;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
