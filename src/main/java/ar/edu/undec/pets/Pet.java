@@ -22,4 +22,8 @@ public class Pet {
     public String getName() {
         return nombre;
     }
+
+    public void setName(String name) {
+        nombre=name;
+    }
 }
