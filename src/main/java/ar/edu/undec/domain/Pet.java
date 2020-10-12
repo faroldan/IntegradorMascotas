@@ -1,4 +1,4 @@
-package ar.edu.undec.pets;
+package ar.edu.undec.domain;
 
 import java.time.LocalDate;
 

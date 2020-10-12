@@ -1,4 +1,4 @@
-package ar.edu.undec.pets;
+package ar.edu.undec.domain;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.ParameterContext;

@@ -1,7 +1,7 @@
 package ar.edu.undec.repository;
 
 
-import ar.edu.undec.pets.Pet;
+import ar.edu.undec.domain.Pet;
 
 public interface IModifyPetRepository {
 

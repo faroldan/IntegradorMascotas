@@ -1,6 +1,6 @@
 package useCaseUnitTest;
-import ar.edu.undec.pets.MockitoExtension;
-import ar.edu.undec.pets.Pet;
+import ar.edu.undec.domain.MockitoExtension;
+import ar.edu.undec.domain.Pet;
 import ar.edu.undec.repository.ICreatePetRepository;
 import ar.edu.undec.usecase.CreatePetUseCase;
 import org.junit.jupiter.api.Assertions;

@@ -1,6 +1,6 @@
 package ar.edu.undec.usecase;
 
-import ar.edu.undec.pets.Pet;
+import ar.edu.undec.domain.Pet;
 import ar.edu.undec.repository.ICreatePetRepository;
 import ar.edu.undec.usecase.input.ICreatePetInput;
 
