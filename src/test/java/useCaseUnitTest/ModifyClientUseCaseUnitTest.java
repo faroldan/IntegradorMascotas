@@ -7,6 +7,7 @@ import ar.edu.undec.repository.ICreatePetRepository;
 import ar.edu.undec.repository.IModifyClientRepository;
 import ar.edu.undec.usecase.CreatePetUseCase;
 import ar.edu.undec.usecase.ModifyClientUseCase;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -33,14 +34,14 @@ public class ModifyClientUseCaseUnitTest {
         ModifyClientUseCase customerModifCase = new ModifyClientUseCase(modifyCustomerRepo);
 
 
-        when(customerModifCase.modifyClient(customer)).thenReturn(true);
-        //when(.savePet(pet)).thenReturn(true);
+       /* when(customerModifCase.modifyClient(customer)).thenReturn(true);
+
 
         //Act
-        //boolean result=modifyPetRepo.changed(pet_1);
+        boolean result=modifyCustomerRepo.changed(customer);
 
         //Assert
-        //Assertions.assertTrue(result);
+        Assertions.assertTrue(result);*/
 
     }
 }

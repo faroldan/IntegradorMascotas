@@ -1,4 +1,4 @@
-package ar.edu.undec.domain;
+package ar.edu.undec.mascotas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
