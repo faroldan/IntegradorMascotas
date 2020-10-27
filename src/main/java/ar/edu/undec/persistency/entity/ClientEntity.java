@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
-@Entity(name = "pet")
+@Entity(name = "client")
 @SequenceGenerator(name = "client_id_seq", initialValue = 1,sequenceName = "client_id_seq", allocationSize = 1)
 public class ClientEntity {
 
