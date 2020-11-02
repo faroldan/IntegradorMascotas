@@ -19,8 +19,10 @@ public class PetEntity {
     private String raza;
     @Column(name="dob")
     private LocalDate fechaNacimiento;
-    @ManyToOne
-    private Client customer;
+
+    /*@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "idclient")
+    private ClientEntity customer;*/
 
     public PetEntity() {
     }
