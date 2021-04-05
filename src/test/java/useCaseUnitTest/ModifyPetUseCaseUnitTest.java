@@ -4,6 +4,7 @@ import ar.edu.undec.domain.MockitoExtension;
 import ar.edu.undec.domain.Pet;
 import ar.edu.undec.repository.ICreatePetRepository;
 import ar.edu.undec.repository.IModifyPetRepository;
+import ar.edu.undec.usecase.CreatePetUseCase;
 import ar.edu.undec.usecase.ModifyPetUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -17,25 +18,25 @@ import static org.mockito.Mockito.when;
 public class ModifyPetUseCaseUnitTest {
 
     IModifyPetRepository modifyPetRepo;
-    private ICreatePetRepository createPetRepo;
+    ICreatePetRepository createPetRepo;
 
     @Test
     void ModifyPetTest(){
         //arrange
         Pet pet =  Pet.instancia("WildStallion", "GermanShupurd", LocalDate.of(2018, 1, 1));
         Pet pet_1 =  Pet.instancia("CanCerberus", "StreetGuardian", LocalDate.of(2017, 4, 1));
-        //CreatePetUseCase petCase = new CreatePetUseCase(createPetRepo);
+        CreatePetUseCase petCase = new CreatePetUseCase(createPetRepo);
         ModifyPetUseCase petModifCase= new ModifyPetUseCase(modifyPetRepo);
 
 
-        //when(petModifCase.modifyPet(pet_1,"Cerberus")).thenReturn(true);
-        //when(.savePet(pet)).thenReturn(true);
+        when(petModifCase.modifyPet(pet_1,"Cerberus")).thenReturn(true);
+        when(createPetRepo.savePet(pet)).thenReturn(true);
 
         //Act
-        //boolean result=modifyPetRepo.changed(pet_1);
+        boolean result=modifyPetRepo.changed(pet_1);
 
         //Assert
-       // Assertions.assertTrue(result);
+        Assertions.assertTrue(result);
 
 
     }
