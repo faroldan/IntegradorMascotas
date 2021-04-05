@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
-@Entity(name = "pet")
+@Entity(name = "client")
 @SequenceGenerator(name = "client_id_seq", initialValue = 1,sequenceName = "client_id_seq", allocationSize = 1)
 public class ClientEntity {
 
@@ -23,8 +23,8 @@ public class ClientEntity {
     @Column(name="dob")
     private LocalDate DOB;
 
-    @OneToMany( targetEntity= Pet.class )
-    private List petlist;
+    /*@OneToMany( fetch = FetchType.LAZY, mappedBy = "client" )
+    private List<PetEntity> petlist;*/
 
     public ClientEntity() {
     }
@@ -69,11 +69,11 @@ public class ClientEntity {
         this.DOB = DOB;
     }
 
-    public List getPetlist() {
+    /*public List getPetlist() {
         return petlist;
     }
 
     public void setPetlist(List petlist) {
         this.petlist = petlist;
-    }
+    }*/
 }
